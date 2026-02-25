@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('acuses_api', function (Blueprint $table) {
+        Schema::create('accesos_apis', function (Blueprint $table) {
             $table->id();
             $table->string('client_id');
             $table->string('client_secret');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('acuses_api');
+        Schema::dropIfExists('accesos_apis');
     }
 };

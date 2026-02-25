@@ -2,10 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class UserOpcion extends Model
+class UserOpcion extends Pivot
 {
+    protected $table = 'user_opcion';
+
+    //public $incrementing = false;
+    //public $timestamps = false;
+
     protected $fillable = [
         'user_id',
         'opcion_id',
